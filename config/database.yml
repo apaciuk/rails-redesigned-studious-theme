@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: shopgrids_development
+  database: studious_development
   host: <%= ENV.fetch('DB_HOST', 'localhost') %>
   username: postgres
   port: <%= ENV.fetch('DB_PORT', '5432') %>
@@ -62,7 +62,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: shopgrids_test
+  database: studious_test
   host: <%= ENV.fetch('DB_HOST', 'localhost') %>
   username: postgres
   port: <%= ENV.fetch('DB_PORT', '5432') %>
